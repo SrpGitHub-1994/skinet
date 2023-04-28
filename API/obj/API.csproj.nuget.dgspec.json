@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj": {}
+    "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj": {
+    "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj",
+        "projectUniqueName": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "d:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj",
+        "projectPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\obj\\",
+        "outputPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,8 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.16, )"
             },
