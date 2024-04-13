@@ -8,7 +8,7 @@ namespace Infrastructure.Data
     {
         public static async Task CreateContextSeedData(StoreContext context)
         {
-            string seedpath="../Infrasttructure/Data/SeedData/";
+            string seedpath="../Infrastructure/Data/SeedData/";
            if (!context.ProductBrands.Any())
            {
              var brands=File.ReadAllText(seedpath+"brands.json");
