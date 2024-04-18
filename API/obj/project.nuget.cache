@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mbra/YqDhWJiQN9WfK6a2MwEM2x/9ASJy7VwzNjs36itlYkc2wHguk85zgOYqEOwJe3GI66JZ5svJKUDC5m55Q==",
+  "dgSpecHash": "CtQJd3nfatTwKZK+LJD9r6+7O+O/ZAw5lYl9Ov2H2aZUxrG9DEjKjtbHiDqpcu+fAU8blmi5nTq3HzlSnXXHmA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj",
+  "projectFilePath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.16\\microsoft.data.sqlite.core.6.0.16.nupkg.sha512",
