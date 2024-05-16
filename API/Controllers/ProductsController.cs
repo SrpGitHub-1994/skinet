@@ -4,6 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using Core.Entities;
 using Core.Interfaces;
+using System.Diagnostics;
+using Core.Specification;
+using API.Dtos;
+using AutoMapper;
 
 
 namespace API.Controllers
@@ -15,28 +19,44 @@ namespace API.Controllers
         public IGenericRepository<Product> Repo { get; }
         public IGenericRepository<ProductBrand> RepoBrand { get; }
         public IGenericRepository<ProductType> RepoType { get; }
+        public IMapper Mapper { get; }
 
         public ProductsController(IGenericRepository<Product> _repo,
         IGenericRepository<ProductBrand> _repoBrand,
-        IGenericRepository<ProductType> _repoType)
+        IGenericRepository<ProductType> _repoType,IMapper mapper)
         {
+            this.Mapper = mapper;
             Repo = _repo;
             RepoBrand = _repoBrand;
             RepoType = _repoType;
         }
         [HttpGet("Products")]
-        public async Task<ActionResult<List<Product>>> GetProducts()
+        public async Task<ActionResult<List<ProductDTO>>> GetProducts()
         {
-            var ProdList= await Repo.GetAllAsync();
+            var spec=new ProductsWithTypeandBrandSpecification();
+            var ProdList= await Repo.ListAsync(spec);
 
-            return Ok(ProdList);
+            return Ok(ProdList.Select(prod=>new ProductDTO {
+            Id=prod.Id,
+            ProductBrand=prod.ProdBrandid.ToString(),//RepoBrand.GetByIdAsync(prod.ProdBrandid).Result.Name,
+            ProductType=prod.ProdBrandid.ToString(),//RepoType.GetByIdAsync(prod.ProdBrandid).Result.Name,
+            Description=prod.Description,
+            PictureUrl=prod.PictureUrl,
+            ProductName=prod.ProductName,
+            Price=prod.Price
+
+           }).ToList());
         }
 
         [HttpGet("Product/{Id}")]
-        public async Task<ActionResult<Product>> GetProduct(int Id)
+        public async Task<ActionResult<ProductDTO>> GetProduct(int Id)
         {
-            var prod= await Repo.GetByIdAsync(Id);
-            return Ok(prod);
+            var spec=new ProductsWithTypeandBrandSpecification();
+            var prod= await Repo.GetEntityWithSpec(spec);
+            prod.ProductBrand=RepoBrand.GetByIdAsync(prod.ProdBrandid).Result;
+            prod.ProductType=RepoType.GetByIdAsync(prod.ProdTypeId).Result;
+           return Ok(Mapper.Map<Product,ProductDTO>(prod));
+        
         }
 
         [HttpGet("Brands")]
