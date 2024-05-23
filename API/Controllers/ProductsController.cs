@@ -31,27 +31,18 @@ namespace API.Controllers
             RepoType = _repoType;
         }
         [HttpGet("Products")]
-        public async Task<ActionResult<List<ProductDTO>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<ProductDTO>>> GetProducts()
         {
             var spec=new ProductsWithTypeandBrandSpecification();
             var ProdList= await Repo.ListAsync(spec);
 
-            return Ok(ProdList.Select(prod=>new ProductDTO {
-            Id=prod.Id,
-            ProductBrand=prod.ProdBrandid.ToString(),//RepoBrand.GetByIdAsync(prod.ProdBrandid).Result.Name,
-            ProductType=prod.ProdBrandid.ToString(),//RepoType.GetByIdAsync(prod.ProdBrandid).Result.Name,
-            Description=prod.Description,
-            PictureUrl=prod.PictureUrl,
-            ProductName=prod.ProductName,
-            Price=prod.Price
-
-           }).ToList());
+            return Ok(Mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductDTO>>(ProdList));
         }
 
         [HttpGet("Product/{Id}")]
         public async Task<ActionResult<ProductDTO>> GetProduct(int Id)
         {
-            var spec=new ProductsWithTypeandBrandSpecification();
+            var spec=new ProductsWithTypeandBrandSpecification(Id);
             var prod= await Repo.GetEntityWithSpec(spec);
             prod.ProductBrand=RepoBrand.GetByIdAsync(prod.ProdBrandid).Result;
             prod.ProductType=RepoType.GetByIdAsync(prod.ProdTypeId).Result;
@@ -62,15 +53,15 @@ namespace API.Controllers
         [HttpGet("Brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
         {
-            var prod= await Repo.GetAllAsync();
-            return Ok(prod);
+            var brands= await RepoBrand.GetAllAsync();
+            return Ok(brands);
         }
 
          [HttpGet("Types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
-            var prod= await Repo.GetAllAsync();
-            return Ok(prod);
+            var typ= await RepoType.GetAllAsync();
+            return Ok(typ);
         }
     }
 }

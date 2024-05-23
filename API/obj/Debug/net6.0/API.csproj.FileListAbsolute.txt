@@ -73,3 +73,4 @@ D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\API\obj\Debug\net6.0\API.MvcAp
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\API\obj\Debug\net6.0\API.sourcelink.json
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\bin\Debug\net6.0\AutoMapper.dll
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\API\bin\Debug\net6.0\API.staticwebassets.runtime.json
