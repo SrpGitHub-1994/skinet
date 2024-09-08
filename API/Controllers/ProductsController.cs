@@ -8,13 +8,12 @@ using System.Diagnostics;
 using Core.Specification;
 using API.Dtos;
 using AutoMapper;
+using API.Errors;
 
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api")]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseAPIController
     {
         public IGenericRepository<Product> Repo { get; }
         public IGenericRepository<ProductBrand> RepoBrand { get; }
@@ -31,6 +30,8 @@ namespace API.Controllers
             RepoType = _repoType;
         }
         [HttpGet("Products")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<IReadOnlyList<ProductDTO>>> GetProducts()
         {
             var spec=new ProductsWithTypeandBrandSpecification();

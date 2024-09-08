@@ -18,7 +18,6 @@ D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\API.MvcAp
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\staticwebassets.build.json
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\staticwebassets.development.json
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
-D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\API.csproj.CopyComplete
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\API.dll
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\refint\API.dll
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\API.pdb
@@ -74,3 +73,4 @@ D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\API\obj\Debug\net6.0\API.sourc
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\bin\Debug\net6.0\AutoMapper.dll
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\API\bin\Debug\net6.0\API.staticwebassets.runtime.json
+D:\Projects\GIT Hub\eCommerce Angular\Docs\skinet\api\obj\Debug\net6.0\API.csproj.Up2Date
