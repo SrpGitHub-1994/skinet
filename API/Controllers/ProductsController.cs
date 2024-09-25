@@ -29,12 +29,13 @@ namespace API.Controllers
             RepoBrand = _repoBrand;
             RepoType = _repoType;
         }
+
         [HttpGet("Products")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<IReadOnlyList<ProductDTO>>> GetProducts()
+       // [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<IReadOnlyList<ProductDTO>>> GetProducts(string sort)
         {
-            var spec=new ProductsWithTypeandBrandSpecification();
+            var spec=new ProductsWithTypeandBrandSpecification(sort);
             var ProdList= await Repo.ListAsync(spec);
 
             return Ok(Mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductDTO>>(ProdList));
