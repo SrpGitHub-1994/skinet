@@ -25,8 +25,10 @@ else{
         app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 // app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseCors("DefaultPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
