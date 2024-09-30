@@ -9,6 +9,7 @@ using Core.Specification;
 using API.Dtos;
 using AutoMapper;
 using API.Errors;
+using API.Helpers;
 
 
 namespace API.Controllers
@@ -33,12 +34,19 @@ namespace API.Controllers
         [HttpGet("Products")]
         [ProducesResponseType(StatusCodes.Status200OK)]
        // [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<IReadOnlyList<ProductDTO>>> GetProducts(string sort)
+        public async Task<ActionResult<Pagination<ProductDTO>>> GetProducts([FromQuery] prodSpecificationparams specificationparams)
         {
-            var spec=new ProductsWithTypeandBrandSpecification(sort);
+            var spec=new ProductsWithTypeandBrandSpecification(specificationparams);
+
+            var CountSpec=new ProductWithFiltersForCountSpecification(specificationparams);
+
+            var totalItems= await Repo.GetCountAsync(CountSpec);
+
             var ProdList= await Repo.ListAsync(spec);
 
-            return Ok(Mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductDTO>>(ProdList));
+            var retData=Mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductDTO>>(ProdList);
+
+            return Ok(new Pagination<ProductDTO> (specificationparams.pageIndex,specificationparams.PageSize,totalItems,retData));
         }
 
         [HttpGet("Product/{Id}")]

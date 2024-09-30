@@ -9,15 +9,18 @@ namespace Core.Specification
 {
     public class ProductsWithTypeandBrandSpecification:BaseSpecification<Product>
     {
-        public ProductsWithTypeandBrandSpecification(string sort)
+        public ProductsWithTypeandBrandSpecification(prodSpecificationparams specificationparams) : base(x=>
+        (string.IsNullOrEmpty(specificationparams.Search) || x.ProductName.ToLower().Contains(specificationparams.Search)) &&
+        (!specificationparams.brandId.HasValue || x.ProdBrandid==specificationparams.brandId) &&
+         (!specificationparams.typeId.HasValue || x.ProdTypeId==specificationparams.typeId)
+        )
         {
             AddInclude(x=>x.ProductBrand);
-            AddInclude(x=> x.ProductType);
-            AddOrderBy(x=>x.ProductName);
+            AddInclude(x=> x.ProductType);              
 
-            if (sort != null)
+            if (specificationparams.sort != null)
             {
-                switch (sort)
+                switch (specificationparams.sort)
                 {
                     case "priceasc": AddOrderBy(x=>x.Price); 
                     break;
@@ -27,13 +30,18 @@ namespace Core.Specification
                     break;
                 }
             }
+            else{
+                 AddOrderBy(x=>x.ProductName);
+            }
+            
+             ApplyPaging(specificationparams.PageSize*((specificationparams.pageIndex)-1), specificationparams.PageSize);
+        
         }
 
         public ProductsWithTypeandBrandSpecification(int id):base(x=>x.Id==id)
         {
             AddInclude(x=>x.ProductBrand);
             AddInclude(x=> x.ProductType);
-               AddOrderBy(x=>x.ProductName);
         }
     }
 }
