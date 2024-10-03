@@ -1637,8 +1637,8 @@
     },
     "Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+      "path": "../infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1657,11 +1657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj",
+      "projectUniqueName": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\API.csproj",
+      "projectPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\API.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\obj\\",
+      "outputPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1686,8 +1686,8 @@
             "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\Core\\Core.csproj": {
               "projectPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\Core\\Core.csproj"
             },
-            "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\infrastructure\\Infrastructure.csproj"
             }
           }
         }
