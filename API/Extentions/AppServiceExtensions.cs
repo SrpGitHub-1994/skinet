@@ -37,13 +37,18 @@ Services.Configure<ApiBehaviorOptions>(option=> {
     };
 });
 
-Services.AddCors(opt=>
-{
-    opt.AddPolicy("DefaultPolicy", policy => {
-        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
-
+        Services.AddCors(options=>
+       {
+        options.AddPolicy("AllowLocalhostOrigins",
+            builder =>
+            {
+                builder.WithOrigins("https://localhost:4200")
+                       .AllowAnyHeader()
+                       .AllowAnyMethod();
+            });
     });
-});
+
+    
 
            return Services;
         }

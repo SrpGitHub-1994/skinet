@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XaCYCudCO2C5blR7rMXHN1/rCZCOkJWmQ/MQxKIYW4o=",
+  "Hash": "zM/be6Y7Gx+lGceV990ousCSCD2cAKAKA4K5+yVptfg=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -17,7 +17,7 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\boot-ang1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\boot-ang1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -36,7 +36,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\boot-ang2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\boot-ang2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -55,7 +55,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\boot-core1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\boot-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -74,7 +74,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-core1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\boot-core2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\boot-core2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -93,7 +93,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-core2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\boot-redis1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\boot-redis1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -112,7 +112,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-redis1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\glove-code1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\glove-code1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -131,7 +131,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-code1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\glove-code2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\glove-code2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -150,7 +150,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-code2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\glove-react1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\glove-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -169,7 +169,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-react1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\glove-react2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\glove-react2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -188,7 +188,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-react2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\hat-core1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\hat-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -207,7 +207,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\hat-core1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\hat-react1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\hat-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -226,7 +226,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\hat-react1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\hat-react2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\hat-react2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -245,7 +245,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\hat-react2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\sb-ang1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\sb-ang1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -264,7 +264,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\sb-ang2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\sb-ang2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -283,7 +283,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\sb-core1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\sb-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -302,7 +302,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-core1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\sb-core2.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\sb-core2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -321,7 +321,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-core2.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\sb-react1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\sb-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-react1.png"
     },
     {
-      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\api\\wwwroot\\images\\products\\sb-ts1.png",
+      "Identity": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\images\\products\\sb-ts1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\GIT Hub\\eCommerce Angular\\Docs\\skinet\\API\\wwwroot\\",

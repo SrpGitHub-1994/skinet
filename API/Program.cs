@@ -28,7 +28,7 @@ else{
 
 // app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseCors("DefaultPolicy");
+app.UseCors("AllowLocalhostOrigins");
 app.UseAuthorization();
 
 app.MapControllers();

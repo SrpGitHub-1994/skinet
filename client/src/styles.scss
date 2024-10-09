@@ -1,3 +1,21 @@
+@use '@angular/material' as mat;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+$customeTheme:mat.define-theme();
+
+@include mat.core();
+
+.custome-theme{
+    @include mat.all-component-themes($customeTheme);
+
+    .mdc-button, .mdc-stroked-button, .mdc-raised-button, .mdc-flat-button{
+        @apply rounded-md
+    }
+}
+
+.custom-container{
+    @apply mx-auto max-w-screen-2xl
+}

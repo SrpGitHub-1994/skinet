@@ -25,7 +25,7 @@ namespace Core.Specification
         private string _Search;
         public string Search
         {
-            get => _Search.ToLower();
+            get => (_Search ?? "").ToLower();
             set => _Search = value.ToLower();
         }
 

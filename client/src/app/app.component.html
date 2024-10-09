@@ -1,1 +1,17 @@
-<h1 class="text-3xl font-bold underline">Welcom to My APP</h1>
+<app-header></app-header>
+
+
+<div class="custom-container mt-6">
+    <h1 class="text-3xl font-bold underline ml-6">ASMS e-Commerce</h1>
+        <br/>
+    <ul class="ml-6">
+        
+        @for (item of products; track $index) {
+            <li>
+               
+               <label>{{$index+1}}.</label> {{item.productName}}
+               
+            </li>
+        }
+    </ul>
+</div>
