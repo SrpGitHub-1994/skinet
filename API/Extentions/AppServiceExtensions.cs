@@ -15,7 +15,8 @@ namespace API.Extentions
 Services.AddSwaggerGen();
 Services.AddDbContext<StoreContext>(opt=>{
 
-opt.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
+//opt.UseSqlite(configuration.GetConnectionString("DefaultConnection")); for SQL Lite skinet DB
+opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 
 });
 

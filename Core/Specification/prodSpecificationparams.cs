@@ -21,6 +21,8 @@ namespace Core.Specification
         public int? typeId{ get; set; }
 
         public string sort { get; set; }
+        public string brands { get; set; }
+        public string types { get; set; }
 
         private string _Search;
         public string Search

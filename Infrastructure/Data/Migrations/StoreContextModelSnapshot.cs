@@ -26,12 +26,12 @@ namespace Infrastructure.Data.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(1000)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(250)");
 
                     b.Property<string>("PictureUrl")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(250)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -47,8 +47,7 @@ namespace Infrastructure.Data.Migrations
 
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasMaxLength(400)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(250)");
 
                     b.Property<int?>("ProductTypeId")
                         .HasColumnType("INTEGER");
@@ -69,7 +68,7 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(250)");
 
                     b.HasKey("Id");
 
@@ -83,7 +82,7 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(250)");
 
                     b.HasKey("Id");
 

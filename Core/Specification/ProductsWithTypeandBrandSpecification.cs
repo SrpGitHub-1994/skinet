@@ -12,6 +12,8 @@ namespace Core.Specification
         public ProductsWithTypeandBrandSpecification(prodSpecificationparams specificationparams) : base(x=>
         (string.IsNullOrEmpty(specificationparams.Search) || x.ProductName.ToLower().Contains(specificationparams.Search)) &&
         (!specificationparams.brandId.HasValue || x.ProdBrandid==specificationparams.brandId) &&
+        (string.IsNullOrEmpty(specificationparams.brands) || x.ProductBrand.Name.ToLower().Contains(specificationparams.brands)) &&
+        (string.IsNullOrEmpty(specificationparams.types) || x.ProductType.Name.ToLower().Contains(specificationparams.types)) &&
          (!specificationparams.typeId.HasValue || x.ProdTypeId==specificationparams.typeId)
         )
         {
