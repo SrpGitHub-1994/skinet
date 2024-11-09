@@ -54,9 +54,9 @@ namespace Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductBrandId");
+                    b.HasIndex("ProdBrandid");
 
-                    b.HasIndex("ProductTypeId");
+                    b.HasIndex("ProdTypeId");
 
                     b.ToTable("Products");
                 });
@@ -93,11 +93,11 @@ namespace Infrastructure.Data.Migrations
                 {
                     b.HasOne("Core.Entities.ProductBrand", "ProductBrand")
                         .WithMany()
-                        .HasForeignKey("ProductBrandId");
+                        .HasForeignKey("ProdBrandid");
 
                     b.HasOne("Core.Entities.ProductType", "ProductType")
                         .WithMany()
-                        .HasForeignKey("ProductTypeId");
+                        .HasForeignKey("ProdTypeId");
 
                     b.Navigation("ProductBrand");
 

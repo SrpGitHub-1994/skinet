@@ -67,12 +67,12 @@ namespace Infrastructure.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Products_ProductBrandId",
                 table: "Products",
-                column: "ProductBrandId");
+                column: "ProdBrandId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_ProductTypeId",
                 table: "Products",
-                column: "ProductTypeId");
+                column: "ProdTypeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
