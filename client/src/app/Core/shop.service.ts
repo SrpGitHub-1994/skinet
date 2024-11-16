@@ -4,6 +4,7 @@ import { product } from '../Shared/Model/Product';
 import { pagination } from '../Shared/Model/pagination';
 import { Brand } from '../Shared/Brand';
 import { Types } from '../Shared/Model/Types';
+import { shopParams } from '../Shared/Model/shopParams';
 
 @Injectable({
   providedIn: 'root'
@@ -15,18 +16,26 @@ export class ShopService {
   brand:string[]=[];
 
 
-  getproducts(brands?:string[],types?:string[]) { 
+  getproducts(shopparams:shopParams) { 
     let params=new HttpParams();
-    if(brands && brands.length>0)
+    if(shopparams.brands && shopparams.brands.length>0)
     {
-      params=params.append('brands',brands.join(','));
+      params=params.append('brands',shopparams.brands.join(','));
     }
-    if(types && types.length>0)
-      {
-        params=params.append('types',types.join(','));
-      }
-
-      params=params.append('pageSize',20);
+    if(shopparams.types && shopparams.types.length>0)
+     {
+        params=params.append('types',shopparams.types.join(','));
+    }
+    if(shopparams.sort)
+    {
+      params=params.append('sort',shopparams.sort);
+    }
+    if(shopparams.search)
+    {
+      params=params.append('search',shopparams.search);
+    }
+      params=params.append('pageSize',shopparams.pageSize);
+      params=params.append('pageIndex',shopparams.pageNumber);
     return this.http.get<pagination<product>>(this.baseUrl+'Products/Products',{params});
   }
 
@@ -40,7 +49,6 @@ export class ShopService {
             this.brand.push(res[i].name);
           }
          
-          console.log(this.brand);
         },
         err=>{
           console.log(err);
@@ -56,7 +64,6 @@ export class ShopService {
            
             this.types.push(res[i].name);
           }
-          console.log(this.types);
         },
         err=>{
           console.log(err);

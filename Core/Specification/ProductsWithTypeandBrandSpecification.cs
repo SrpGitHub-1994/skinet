@@ -24,9 +24,9 @@ namespace Core.Specification
             {
                 switch (specificationparams.sort)
                 {
-                    case "priceasc": AddOrderBy(x=>x.Price); 
+                    case "priceAsc": AddOrderBy(x=>x.Price); 
                     break;
-                    case "pricedesc": AddOrderByDesc(x=>x.Price);
+                    case "priceDesc": AddOrderByDesc(x=>x.Price);
                     break;
                     default: AddOrderBy(x=>x.ProductName);
                     break;
