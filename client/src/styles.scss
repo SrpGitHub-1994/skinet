@@ -21,9 +21,14 @@ $customeTheme:mat.define-theme();
 }
 
 .text-primary{
-    color: #7d00fa;
+    color: #7d00fa
 }
 
 button.match-input-height{
-    height: var(--mat-form-field-container-height) !important;
+    height: var(--mat-form-field-container-height) !important
+}
+
+.mdc-notched-outline__notch{
+    border-right-style:none !important
+
 }

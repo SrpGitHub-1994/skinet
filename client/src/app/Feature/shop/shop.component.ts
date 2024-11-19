@@ -106,8 +106,8 @@ export class ShopComponent implements OnInit {
       next:results=>{
         if(results)
         {
-          this.shopparams.brands=results.selectedBrand
-          this.shopparams.types=results.selectedType
+          this.shopparams.brands=results.selectedBrand;
+          this.shopparams.types=results.selectedType;
           //apply the filters below
           this.shopparams.pageNumber=1;
           this.GetProdList();
